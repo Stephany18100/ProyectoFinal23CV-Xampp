@@ -34,9 +34,9 @@ namespace ProyectoFinal23CV.VistaWFP
 
         UsuarioServices services = new UsuarioServices();
         Usuario usuario = new Usuario();
-       
-     
-        public void  GetUserTable() 
+
+
+        public void GetUserTable()
         {
             UserTable.ItemsSource = services.GetUser();
 
@@ -56,5 +56,6 @@ namespace ProyectoFinal23CV.VistaWFP
 
             MessageBox.Show("Se agrego Correctamente");
         }
+
     }
 }

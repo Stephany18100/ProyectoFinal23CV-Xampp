@@ -6,18 +6,18 @@
         xmlns:local="clr-namespace:ProyectoFinal23CV.VistaWFP"
         mc:Ignorable="d"
         Title="Sistema" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FFDABFBF">
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label Content="Bienvenido al sistema :) " HorizontalAlignment="Left" Margin="38,17,0,0" VerticalAlignment="Top" FontSize="30" IsEnabled="False" Background="Transparent" Height="49" Width="340"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="30,178,0,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Right"/>
-        <Label Content="Usuario" HorizontalAlignment="Left" Margin="32,131,0,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Right"/>
-        <Label Content="Nombre" HorizontalAlignment="Left" Margin="31,86,0,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Right"/>
-        <TextBox x:Name="txt_nombre" HorizontalAlignment="Left" Margin="130,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtuser" HorizontalAlignment="Left" Margin="130,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtpassword" HorizontalAlignment="Left" Margin="131,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="AgregarBT" Content="Agregar" HorizontalAlignment="Left" Margin="88,262,0,0" VerticalAlignment="Top" Height="43" Width="104" Click="BtnAdd_Click_1" Background="#FFBEE67C" />
+        <Label Content="Bienvenido al sistema :) " HorizontalAlignment="Left" Margin="38,17,0,0" VerticalAlignment="Top" FontSize="30" IsEnabled="False" Height="49" Width="340" Background="#FFC5AEAE"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="13,236,0,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Right"/>
+        <Label Content="Usuario" HorizontalAlignment="Left" Margin="24,178,0,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Right"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="24,126,0,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="txt_nombre" HorizontalAlignment="Left" Margin="126,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="txtuser" HorizontalAlignment="Left" Margin="125,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtpassword" HorizontalAlignment="Left" Margin="127,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="AgregarBT" Content="GUARDAR" HorizontalAlignment="Left" Margin="77,340,0,0" VerticalAlignment="Top" Height="43" Width="104" Click="BtnAdd_Click_1" Background="#FFBEE67C" />
 
         <DataGrid x:Name="UserTable" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" ColumnWidth="*" IsSynchronizedWithCurrentItem="True" Margin="299,101,46,94">
             <DataGrid.Columns>
@@ -43,5 +43,7 @@
             </DataGrid.Columns>
 
         </DataGrid>
+        <Label Content="ROL" HorizontalAlignment="Left" Margin="36,284,0,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Right"/>
+        <ComboBox HorizontalAlignment="Left" Margin="128,291,0,0" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>
